@@ -6,25 +6,65 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		08EBC5D72CA4998B00D545CE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EBC5D62CA4998B00D545CE /* OpenGL.framework */; };
+		08EBC5D92CA4999400D545CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EBC5D82CA4999400D545CE /* Cocoa.framework */; };
+		08EBC5DD2CA499AD00D545CE /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EBC5DA2CA499AC00D545CE /* SDL2_mixer.framework */; };
+		08EBC5DE2CA499AD00D545CE /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EBC5DB2CA499AC00D545CE /* SDL2.framework */; };
+		08EBC5DF2CA499AD00D545CE /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EBC5DC2CA499AC00D545CE /* SDL2_image.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		08EBC2B22CA4902F00D545CE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08EBC2B42CA4902F00D545CE /* homework_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = homework_1; sourceTree = BUILT_PRODUCTS_DIR; };
+		08EBC5D62CA4998B00D545CE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		08EBC5D82CA4999400D545CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		08EBC5DA2CA499AC00D545CE /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		08EBC5DB2CA499AC00D545CE /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		08EBC5DC2CA499AC00D545CE /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		08EBC5F82CA49E9A00D545CE /* homework_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = homework_1; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		08EBC5F52CA49BF700D545CE /* Exceptions for "homework_1" folder in "homework_1" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				glm/detail/glm.cpp,
+			);
+			target = 08EBC2B32CA4902F00D545CE /* homework_1 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		08EBC5F32CA49BCF00D545CE /* Exceptions for "homework_1" folder in "Copy Files" phase from "homework_1" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 08EBC2B22CA4902F00D545CE /* CopyFiles */;
+			membershipExceptions = (
+				shaders,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		08EBC2B62CA4902F00D545CE /* homework_1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				08EBC5F52CA49BF700D545CE /* Exceptions for "homework_1" folder in "homework_1" target */,
+				08EBC5F32CA49BCF00D545CE /* Exceptions for "homework_1" folder in "Copy Files" phase from "homework_1" target */,
+			);
+			explicitFolders = (
+				shaders,
+			);
 			path = homework_1;
 			sourceTree = "<group>";
 		};
@@ -35,6 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08EBC5DD2CA499AD00D545CE /* SDL2_mixer.framework in Frameworks */,
+				08EBC5DE2CA499AD00D545CE /* SDL2.framework in Frameworks */,
+				08EBC5DF2CA499AD00D545CE /* SDL2_image.framework in Frameworks */,
+				08EBC5D92CA4999400D545CE /* Cocoa.framework in Frameworks */,
+				08EBC5D72CA4998B00D545CE /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,16 +90,21 @@
 			isa = PBXGroup;
 			children = (
 				08EBC2B62CA4902F00D545CE /* homework_1 */,
-				08EBC2B52CA4902F00D545CE /* Products */,
+				08EBC5D52CA4998B00D545CE /* Frameworks */,
+				08EBC5F82CA49E9A00D545CE /* homework_1 */,
 			);
 			sourceTree = "<group>";
 		};
-		08EBC2B52CA4902F00D545CE /* Products */ = {
+		08EBC5D52CA4998B00D545CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08EBC2B42CA4902F00D545CE /* homework_1 */,
+				08EBC5DB2CA499AC00D545CE /* SDL2.framework */,
+				08EBC5DC2CA499AC00D545CE /* SDL2_image.framework */,
+				08EBC5DA2CA499AC00D545CE /* SDL2_mixer.framework */,
+				08EBC5D82CA4999400D545CE /* Cocoa.framework */,
+				08EBC5D62CA4998B00D545CE /* OpenGL.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -64,7 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08EBC2BB2CA4902F00D545CE /* Build configuration list for PBXNativeTarget "homework_1" */;
 			buildPhases = (
-				08EBC2B02CA4902F00D545CE /* Sources */,
+				08EBC5F42CA49BF700D545CE /* Sources */,
 				08EBC2B12CA4902F00D545CE /* Frameworks */,
 				08EBC2B22CA4902F00D545CE /* CopyFiles */,
 			);
@@ -79,7 +129,7 @@
 			packageProductDependencies = (
 			);
 			productName = homework_1;
-			productReference = 08EBC2B42CA4902F00D545CE /* homework_1 */;
+			productReference = 08EBC5F82CA49E9A00D545CE /* homework_1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +156,7 @@
 			mainGroup = 08EBC2AB2CA4902F00D545CE;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 08EBC2B52CA4902F00D545CE /* Products */;
+			productRefGroup = 08EBC2AB2CA4902F00D545CE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -116,7 +166,7 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		08EBC2B02CA4902F00D545CE /* Sources */ = {
+		08EBC5F42CA49BF700D545CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,6 +295,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/homework_1",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/Library/Frameworks,
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2_image.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +314,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/homework_1",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/Library/Frameworks,
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2_image.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
