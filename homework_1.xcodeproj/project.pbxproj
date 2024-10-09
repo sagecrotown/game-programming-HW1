@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,7 +36,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		08EBC5F52CA49BF700D545CE /* Exceptions for "homework_1" folder in "homework_1" target */ = {
+		08EBC5F52CA49BF700D545CE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				glm/detail/glm.cpp,
@@ -45,29 +45,8 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		08EBC5F32CA49BCF00D545CE /* Exceptions for "homework_1" folder in "Copy Files" phase from "homework_1" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 08EBC2B22CA4902F00D545CE /* CopyFiles */;
-			membershipExceptions = (
-				shaders,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		08EBC2B62CA4902F00D545CE /* homework_1 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				08EBC5F52CA49BF700D545CE /* Exceptions for "homework_1" folder in "homework_1" target */,
-				08EBC5F32CA49BCF00D545CE /* Exceptions for "homework_1" folder in "Copy Files" phase from "homework_1" target */,
-			);
-			explicitFolders = (
-				shaders,
-			);
-			path = homework_1;
-			sourceTree = "<group>";
-		};
+		08EBC2B62CA4902F00D545CE /* homework_1 */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (08EBC5F52CA49BF700D545CE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (shaders, ); path = homework_1; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +126,7 @@
 				};
 			};
 			buildConfigurationList = 08EBC2AF2CA4902F00D545CE /* Build configuration list for PBXProject "homework_1" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -155,7 +135,6 @@
 			);
 			mainGroup = 08EBC2AB2CA4902F00D545CE;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 08EBC2AB2CA4902F00D545CE;
 			projectDirPath = "";
 			projectRoot = "";
