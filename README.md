@@ -1,3 +1,3 @@
 # game-programming-HW1
 
-First homework for intro to game programming
+Draw a simple 2D scene with openGL
